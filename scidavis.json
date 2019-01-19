@@ -1,0 +1,27 @@
+{
+    "homepage": "http://scidavis.sourceforge.net/",
+    "description": "SciDAVis is a free application for Scientific Data Analysis and Visualization.",
+    "license": "GPL-2.0",
+    "version": "1.23",
+    "url": "https://astuteinternet.dl.sourceforge.net/project/scidavis/SciDAVis/1.23/scidavis.1.23-win-dist.msi",
+    "hash": "sha1:b7b8ebb95835ae6cfd925666b0701509878d3dfd",
+    "bin": "SciDAVis\\scidavis.exe",
+	"shortcuts": [
+		[
+		    "SciDAVis\\scidavis.exe",
+			"SciDAVis"
+		]
+	],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/scidavis/files/",
+        "regex": "scidavis.([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://astuteinternet.dl.sourceforge.net/project/scidavis/SciDAVis/$version/scidavis.$version-win-dist.msi"
+    },
+	"notes": [
+	    "The user settings are stored in the registry at HKEY_CURRENT_USER/Software/SciDAVis/SciDAVis.",
+		"They won't be affected by uninstalling or upgrading scidavis.",
+		"You can remove them mannually if needed."
+	]
+}

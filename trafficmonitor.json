@@ -1,0 +1,24 @@
+{
+    "homepage": "https://github.com/zhongyang219/TrafficMonitor",
+    "description": "TrafficMonitor is a network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.",
+    "license": "GPL-3.0",
+    "version": "1.76",
+    "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.76/TrafficMonitor_V1.76.7z",
+    "hash": "f29df465ae81089595b30eb775ec9e93950d2cdbbdd5b78a44e96efde8955e88",
+    "extract_dir": "TrafficMonitor",
+	"bin": [
+        "TrafficMonitor.exe"
+    ],
+	"shortcuts": [
+		[
+		    "TrafficMonitor.exe",
+			"TrafficMonitor"
+		]
+	],
+    "checkver": {
+        "github": "https://github.com/zhongyang219/TrafficMonitor"
+    },
+    "autoupdate": {
+        "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V$version/TrafficMonitor_V$version.7z"
+    }
+}
