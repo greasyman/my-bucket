@@ -1,0 +1,32 @@
+{
+    "homepage": "https://cryptomator.org/",
+    "description": "Multi-platform transparent client-side encryption of your files in the cloud.",
+    "license": "GPL-3.0",
+    "version": "1.4.2",
+    "url": "https://bintray.com/cryptomator/cryptomator/download_file?file_path=Cryptomator-1.4.2-x64.exe",
+    "hash": "544bff0a127b38572a3ab1f9fb85478975dd21a4d9f8ab505c3724b92820c145",
+    "innosetup": true,
+    "bin": "Cryptomator.exe",
+    "shortcuts": [
+        [
+            "Cryptomator.exe",
+            "Cryptomator"
+        ]
+    ],
+	"suggest": {
+	    "Mount vaults via Dokany": "dokany"
+	},
+    "checkver": {
+        "url": "https://cryptomator.org/downloads/#winDownload",
+        "regex": "Version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://bintray.com/cryptomator/cryptomator/download_file?file_path=Cryptomator-$version-x64.exe"
+    },
+    "notes": [
+        "Since v1.4.0 Cryptomator nolonger provides Windows and Linux 32 bit support.",
+		"The user data are stored at %USERPROFILE%/AppData/Roaming/Cryptomator",
+        "They won't be affected by uninstalling or upgrading Cryptomator.",
+        "You can remove them mannually if needed. \n"
+    ]
+}
